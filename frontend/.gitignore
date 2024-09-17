@@ -24,3 +24,6 @@ dist-ssr
 *.sw?
 
 .env
+
+# Ignore Django settings file
+settings.py
