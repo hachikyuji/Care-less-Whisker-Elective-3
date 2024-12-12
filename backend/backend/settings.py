@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-mgngze-w6jsnrb98g@3+o&ovnu0xeg$oj@(_&(9athxk4bacas
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = [".vercel.app"]
 
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": (
@@ -99,11 +99,11 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv("DB_NAME"),
-        'USER': os.getenv("DB_USER"),
-        'PASSWORD' : os.getenv("DB_PWD"),
-        'HOST' : os.getenv("DB_HOST"),
-        'PORT' : os.getenv("DB_PORT"),
+        'NAME': 'carelesswhisker',
+        'USER': 'postgres',
+        'PASSWORD': 'password',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
