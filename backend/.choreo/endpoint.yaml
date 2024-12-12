@@ -1,7 +1,7 @@
-version: 0.1
+schemaVersion: 1.0
 
 endpoints:
-  - name: "CW API "
+  - name: "CW API"
     port: 8000
     type: REST
     networkVisibility: Public
